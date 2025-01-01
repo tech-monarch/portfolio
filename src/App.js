@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
 import myImage from './images/my-image.png';
 import blender from './images/blender.png';
@@ -16,6 +16,24 @@ import react from './images/react.png';
 import tensorflow from './images/tensorflow.png';
 
 function App() {
+  const [showButtonContainer, setShowButtonContainer] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSection = document.getElementById('hero');
+      if (window.scrollY > heroSection.offsetTop) {
+        setShowButtonContainer(false);
+      } else {
+        setShowButtonContainer(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <header>
@@ -36,40 +54,72 @@ function App() {
       </header>
 
       <section id="hero">
-
-      <div>
-        <img src={blender} alt="Blender" className="floating-icon" />
-        <img src={c} alt="C" className="floating-icon1" />
-        <img src={css3} alt="CSS3" className="floating-icon2" />
-        <img src={html5} alt="HTML5" className="floating-icon3" />
-        <img src={js} alt="JavaScript" className="floating-icon4" />
-        <img src={mysql} alt="MySQL" className="floating-icon5" />
-        <img src={node} alt="Node.js" className="floating-icon6" />
-        <img src={php} alt="PHP" className="floating-icon7" />
-        <img src={ps} alt="Photoshop" className="floating-icon8" />
-        <img src={python} alt="Python" className="floating-icon9" />
-        <img src={pytorch} alt="PyTorch" className="floating-icon10" />
-        <img src={react} alt="React" className="floating-icon11" />
-        <img src={tensorflow} alt="TensorFlow" className="floating-icon12" />
-      </div>
-
+        <div>
+          <img src={blender} alt="Blender" className="floating-icon" />
+          <img src={c} alt="C" className="floating-icon1" />
+          <img src={css3} alt="CSS3" className="floating-icon2" />
+          <img src={html5} alt="HTML5" className="floating-icon3" />
+          <img src={js} alt="JavaScript" className="floating-icon4" />
+          <img src={mysql} alt="MySQL" className="floating-icon5" />
+          <img src={node} alt="Node.js" className="floating-icon6" />
+          <img src={php} alt="PHP" className="floating-icon7" />
+          <img src={ps} alt="Photoshop" className="floating-icon8" />
+          <img src={python} alt="Python" className="floating-icon9" />
+          <img src={pytorch} alt="PyTorch" className="floating-icon10" />
+          <img src={react} alt="React" className="floating-icon11" />
+          <img src={tensorflow} alt="TensorFlow" className="floating-icon12" />
+        </div>
 
         <img src={myImage} alt="Hero" className="hero-image" />
         <h2 style={{ color: 'white', fontSize: '3rem' }}>
           I am <span>OMIJEH DAVID ODIANONSEN</span>
         </h2>
-        {/* <p>I am a web developer passionate about creating amazing experiences.</p> */}
 
-        
+        {showButtonContainer && (
+          <div className="button-container">
+            <p>About Me</p>
+            <p>My Projects</p>
+            <p>Contact Me</p>
+          </div>
+        )}
       </section>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Write a short bio here.</p>
+      <section id="about" style={{ textAlign: 'center', marginTop: '3rem' }}>
+        <div>
+          <h2 style={{ padding: '1rem', backgroundColor: '#4B0082', color: 'white', marginBottom: '2rem' }}>About Me</h2>
+        </div>
+        
+
+        <div className="container">
+  <div>
+    <p>About Me</p>
+    <p>My Projects</p>
+    <p>Contact Me</p>
+  </div>
+
+  <div>
+    <p>About Me</p>
+    <p>My Projects</p>
+    <p>Contact Me</p>
+  </div>
+
+  <div>
+    <p>About Me</p>
+    <p>My Projects</p>
+    <p>Contact Me</p>
+  </div>
+
+  <div>
+    <p>About Me</p>
+    <p>My Projects</p>
+    <p>Contact Me</p>
+  </div>
+</div>
+
       </section>
 
       <section id="projects">
-        <h2>My Projects</h2>
+        <h2><span>My Projects</span></h2>
         <p>Showcase your work here.</p>
       </section>
 

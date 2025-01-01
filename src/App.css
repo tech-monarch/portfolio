@@ -120,3 +120,46 @@ section p {
   margin: 0.5rem 0;
 }
 
+.button-container {
+  position: fixed;
+  right: 20px; /* Adjust as needed for positioning */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center in the middle of the page */
+  z-index: 1000; /* Ensure it stays above other content */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align items to the right */
+  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hidden {
+  transform: translateX(100%); /* Slide out to the right */
+}
+
+
+.button-container p {
+  margin: 1rem;
+  padding: 10px 20px;
+  background-color: #6a11cb; /* Example background color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container p:hover {
+  background-color: #6a11cb; /* Hover effect for buttons */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next row */
+  gap: 20px; /* Adds space between items */
+}
+
+.container > div {
+  flex: 1 1 calc(50% - 20px); /* Each div takes up 50% width, minus gap */
+  box-sizing: border-box;
+  padding: 1rem; /* Adds some padding inside each div */
+  border-radius: 1rem;
+  
+}
