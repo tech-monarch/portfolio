@@ -5,7 +5,24 @@ body {
   color: #333;
   line-height: 1.6;
   background-color: #000000;
+  font-family: 'Poppins', sans-serif;
 }
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif; /* or any of the listed fonts */
+}
+
+nav a i {
+  font-size: 2rem; /* Increase the size of icons */
+  color: #4B0082; /* Dark purple color */
+  margin-right: 1rem; /* Optional: add space between icon and text */
+}
+
+nav a i:hover {
+  color: white; /* Optional: change color on hover */
+}
+
+
 
 /* Header Styles */
 header {
@@ -63,6 +80,13 @@ header nav a:hover {
   height: 73vh;
   width: 100%;
 }
+.hero-image {
+  margin-top: -3rem;
+  width: 13rem; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1rem;
+}
+
 
 #hero h2 {
   margin-bottom: 1rem;
@@ -80,10 +104,11 @@ section {
   height: 90vh;
 }
 
-section h2 {
+section h2 span {
   text-align: center;
   margin-bottom: 1rem;
   color: #6a11cb;
+  font-size: 2.5rem;
 }
 
 section p {
