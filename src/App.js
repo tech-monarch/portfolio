@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import myImage from './images/my-image.jpeg';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       </header>
 
       <section id="hero">
+        <img src={myImage} alt="Hero" className="hero-image" />
         <h2>Welcome to My Portfolio</h2>
         <p>I am a web developer passionate about creating amazing experiences.</p>
       </section>
@@ -30,7 +32,7 @@ function App() {
         <h2>My Projects</h2>
         <p>Showcase your work here.</p>
       </section>
-      
+
       <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: your-email@example.com</p>
