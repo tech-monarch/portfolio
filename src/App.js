@@ -157,6 +157,7 @@ const pxxl = { app: 'https://pxxl.app' }; // Example URL
   <h2 className="underline">I Build Cool Stuff</h2>
 <h2 className="underline">I Code Sometimes</h2>
 <h2 className="underline">I Love Reading</h2>
+<h2 className="underline">I Play Chess</h2>
 
   </div>
 
