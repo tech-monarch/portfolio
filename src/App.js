@@ -103,24 +103,70 @@ function App() {
   <img src={pfp} alt="pfp" className="pfp" />
   </div>
 
-  <div style={{width: '100%', height: '30vh', backgroundColor: '#6a11cb', padding: '0.3rem', borderRadius: '0'}}>
+  <div style={{width: '100%', height: '100%', backgroundColor: '#6a11cb', padding: '0.3rem', borderRadius: '0'}}>
 
   <div style={{width: '100%', height: '100%', backgroundColor: 'black', padding: '0.3rem'}}>
   <div style={{width: '100%', height: '100%', backgroundColor: '#6a11cb', padding: '1rem', color: 'white'}}>
 
     <h3><b>My Top Skills/Languages</b></h3>
-    <div>
-      <p  className="skills" >Chess</p>
-      <p className="skills">Javascript</p>
-      <p className="skills">React Native</p>
-      <p className="skills">Php</p>
-      <p className="skills">Typescript</p>
-      <p className="skills">C++</p>
-      <p className="skills">Python</p>
-      <p className="skills">3d Animation</p>
-      <p className="skills">Graphics Design</p>
-      <p className="skills">React</p>
-    </div>
+    
+    <div className="skills-carousel">
+  <div className="skills-track">
+    <p className="skills">Chess</p>
+    <p className="skills">Javascript</p>
+    <p className="skills">React Native</p>
+    <p className="skills">Php</p>
+    <p className="skills">Typescript</p>
+    <p className="skills">C++</p>
+    <p className="skills">Node.js</p>
+    <p className="skills">Python</p>
+    <p className="skills">3D Animation</p>
+    <p className="skills">Graphics Design</p>
+    <p className="skills">React</p>
+
+    {/* Duplicate the skills for seamless scrolling */}
+    <p className="skills">Chess</p>
+    <p className="skills">Javascript</p>
+    <p className="skills">React Native</p>
+    <p className="skills">Php</p>
+    <p className="skills">Typescript</p>
+    <p className="skills">C++</p>
+    <p className="skills">Python</p>
+    <p className="skills">3D Animation</p>
+    <p className="skills">Graphics Design</p>
+    <p className="skills">React</p>
+    <p className="skills">Chess</p>
+    <p className="skills">Javascript</p>
+    <p className="skills">React Native</p>
+    <p className="skills">Php</p>
+    <p className="skills">Typescript</p>
+    <p className="skills">C++</p>
+    <p className="skills">Node.js</p>
+    <p className="skills">Python</p>
+    <p className="skills">3D Animation</p>
+    <p className="skills">Graphics Design</p>
+    <p className="skills">React</p>
+    <p className="skills">Chess</p>
+    <p className="skills">Javascript</p>
+    <p className="skills">React Native</p>
+    <p className="skills">Php</p>
+    <p className="skills">Typescript</p>
+    <p className="skills">C++</p>
+    <p className="skills">Node.js</p>
+    <p className="skills">Python</p>
+    <p className="skills">3D Animation</p>
+    <p className="skills">Graphics Design</p>
+    <p className="skills">React</p>
+  </div>
+</div>
+
+<br></br>
+<br></br>
+<h3><b>A little Writeup about myself✨</b></h3>
+<p>My name is <span style={{color: 'black'}}><b>OMIJEH DAVID ODIANONSEN</b></span>, I'm 17 years old and I'm from EDO State, Nigeria. I started coding when i was about 9 or 10 years old with simple python and scratch. With the curiousity, passion and drive to know more in tech and the world at whole, i became invested in tech and at a young age of 11 i started building rc cars and playing around with electronics, and i even started fixing up spoilt sockets and devices at home, and about 13 years old, i attended my first embedded systems class and i worked with ultrasonic sensors, PIRs, servos, PIRs and a lot of other basic components, I also started 2d amimation...  <br></br>
+At 14 years, i started web development with php(LAMP Stack), then after a while, i started learning MERN stack also and learnt APP development with React-Native. Later on I decided to move into AI/ML when i was about 16 and kept growing and sometime when i was 17 years old, i started 3d modelling... 
+</p>
+
     
 
 
