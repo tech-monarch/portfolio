@@ -246,7 +246,33 @@ useEffect(() => {
 
 <div style={{backgroundColor: 'white', padding: '1rem', margin: '1rem', border: '1px solid black', borderRadius: '1rem', color: 'black', margin: '2rem'}}  data-aos="fade-up"><a href="#" style={{color: '#4c105d'}}>Download Resume</a></div>
 
-
+<h3><b>My Tech Stack</b></h3>
+<div style={{textAlign: 'left', margin: '2rem'}}>
+<h5><b>Frontend:</b></h5>
+Languages: HTML, CSS, JavaScript, TypeScript<br></br>
+Frameworks: React.js<br></br>
+Styling: Tailwind CSS, SCSS<br></br>
+<br></br><br></br>
+<h5><b>Backend:</b></h5>
+Languages: Node.js, PHP<br></br>
+Frameworks: Express.js, Laravel (optional)<br></br>
+Databases:
+MySQL, MongoDB
+<br></br><br></br>
+<h5><b>AI/ML:</b></h5>
+Languages: Python
+Libraries: TensorFlow, scikit-learn, OpenAI API<br></br>
+Embedded Systems:
+Languages: C++
+Tools: Arduino IDE
+<br></br><br></br>
+<h5><b>DevOps/Hosting:</b></h5>
+Tools: Git/GitHub, Docker<br></br>
+Platforms: Pxxl Space, AWS, Vercel, Truehost
+<br></br><br></br>
+<h5><b>Design & 3D/2D:</b></h5>
+Blender, Tupitube
+</div>
 <br></br>
 <br></br>
 <h3><b>A little Writeup about myself✨</b></h3>
