@@ -18,20 +18,15 @@ import react from './images/react.png';
 import tensorflow from './images/tensorflow.png';
 import background from './images/background.png';
 import pfp from './images/pfp.png';
-import 'aos/dist/aos.css';
+
+
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 AOS.init();
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200, // Animation duration in milliseconds
-      easing: 'ease-in-out', // Animation easing function
-      once: false, // Whether animation should happen only once
-    });
-  }, []); // The empty dependency array ensures this runs only once
-
 
   const [showButtonContainer, setShowButtonContainer] = useState(true);
 
@@ -55,6 +50,13 @@ const pxxl = { app: 'https://pxxl.app' }; // Example URL
 
 
 
+useEffect(() => {
+  AOS.init({
+    duration: 1200,
+    easing: 'ease-in-out',
+    once: true,
+  });
+}, []);
 
   return (
     <div className="background-image">
