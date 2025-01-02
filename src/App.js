@@ -179,6 +179,7 @@ const pxxl = { app: 'https://pxxl.app' }; // Example URL
   <div className="skills-track">
     <p className="skills">Chess</p>
     <p className="skills">Javascript</p>
+    <p className="skills">Typescript</p>
     <p className="skills">React Native</p>
     <p className="skills">Php</p>
     <p className="skills">Typescript</p>
