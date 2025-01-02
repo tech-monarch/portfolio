@@ -18,6 +18,9 @@ import react from './images/react.png';
 import tensorflow from './images/tensorflow.png';
 import background from './images/background.png';
 import pfp from './images/pfp.png';
+import pxxl from './images/pxxl.png';
+import lumina from './images/Lumina.png';
+import robot from './images/car.jpg';
 
 
 import AOS from 'aos';
@@ -142,11 +145,11 @@ useEffect(() => {
         
 
         {/* <img src={myImage} alt="Hero" className="hero-image" /> */}
-        <img src={king} alt="Hero" className="hero-image"  data-aos="fade-up"/>
-        <h2 style={{ color: 'white', fontSize: '3rem' }} className="text-arrangement"  data-aos="fade-up">
-          I am <span>OMIJEH DAVID ODIANONSEN</span>
+        <img src={king} alt="Hero" className="hero-image" />
+        <h2 style={{ color: 'white', fontSize: '3rem' }} className="text-arrangement" >
+          <b>I am <span>OMIJEH DAVID ODIANONSEN</span></b>
         </h2>
-        <p  data-aos="fade-up">A.K.A TECH MONARCH(Odia)</p>
+        <p>A.K.A TECH MONARCH(Odia)</p>
 
         {showButtonContainer && (
           <div className="button-container hide">
@@ -166,7 +169,7 @@ useEffect(() => {
 
       <section id="about" style={{ textAlign: 'center', marginTop: '3rem' }}>
         <div>
-          <h2 style={{ padding: '1rem', backgroundColor: '#4B0082', color: 'white', marginBottom: '2rem' }} data-aos="fade-up">About Me</h2>
+          <h2 style={{ padding: '1rem', backgroundColor: '#6a11cb', color: 'white', marginBottom: '2rem' }} data-aos="fade-up">About Me</h2>
         </div>
         
 
@@ -272,7 +275,7 @@ useEffect(() => {
         <p style={{color: 'white'}}  data-aos="fade-up">Over the years, I’ve worked on a variety of projects that reflect my passion for technology, problem-solving, and continuous learning. From web development and software applications to AI-powered tools, each project has been an opportunity to apply my skills, explore new technologies, and contribute to meaningful solutions. Below are some of the key projects I’ve had the privilege of working on.</p>
 
 
-        <div className="project-cards-container">
+        {/* <div className="project-cards-container">
   <div className="project-card"  data-aos="fade-up">
     <img src={pfp} alt="Pxxl Space" />
     <h3><b>Pxxl Space (Web Hosting Platform)</b></h3>
@@ -294,6 +297,141 @@ useEffect(() => {
     <a href={pxxl.app} target="_blank" rel="noopener noreferrer">Learn More</a>
   </div>
 </div>
+ */}
+
+
+<div className="project-cards-container">
+
+
+  
+  <div className="project-card" data-aos="zoom-in">
+    <div className="card-header">
+      <img src={pxxl} alt="Project Preview" className="project-image" />
+      <h2><b>Pxxl Space</b></h2>
+    </div>
+    <p className="project-description">A Free Web Hosting Platform.</p>
+
+    <div className="project-category">
+      <h4>Project Category</h4>
+      <div className="tags">
+        <span className="tag">Web Hosting</span>
+        <span className="tag">JavaScript</span>
+        <span className="tag">Full Stack</span>
+      </div>
+    </div>
+
+    <div className="technologies-used">
+      <h4>Technologies Used</h4>
+      <div className="tags">
+        <span className="tag">TypeScript</span>
+        <span className="tag">Node.js</span>
+        <span className="tag">JavaScript</span>
+        <span className="tag">Express.js</span>
+      </div>
+    </div>
+
+    <div className="project-links">
+      <a href="#" className="btn view-btn">🔗 View</a>
+      <a href="#" className="btn github-btn">🐙 GitHub</a>
+    </div>
+  </div>
+
+
+  
+  <div className="project-card" data-aos="zoom-in">
+    <div className="card-header">
+      <img src={lumina} alt="Project Preview" className="project-image" />
+      <h2><b>LuminaAI</b></h2>
+    </div>
+    <p className="project-description">An AI chatbot that is extremely versatile and can be customised.</p>
+
+    <div className="project-category">
+      <h4>Project Category</h4>
+      <div className="tags">
+        <span className="tag">JavaScript</span>
+        <span className="tag">Full Stack</span>
+      </div>
+    </div>
+
+    <div className="technologies-used">
+      <h4>Technologies Used</h4>
+      <div className="tags">
+        <span className="tag">Javascript</span>
+      </div>
+    </div>
+
+    <div className="project-links">
+      <a href="#" className="btn view-btn">🔗 View</a>
+      <a href="#" className="btn github-btn">🐙 GitHub</a>
+    </div>
+  </div>
+
+
+
+
+  <div className="project-card" data-aos="zoom-in">
+    <div className="card-header">
+      <img src={robot} alt="Project Preview" className="project-image" />
+      <h2><b>Robot Car</b></h2>
+    </div>
+    <p className="project-description">A robotic car that can be controlled using our mobile device and can remain autonomous.</p>
+
+    <div className="project-category">
+      <h4>Project Category</h4>
+      <div className="tags">
+        <span className="tag">Embedded Systems</span>
+        <span className="tag">Hardware Engineering</span>
+      </div>
+    </div>
+
+    <div className="technologies-used">
+      <h4>Technologies Used</h4>
+      <div className="tags">
+        <span className="tag">C ++</span>
+        <span className="tag">Arduino</span>
+      </div>
+    </div>
+
+    <div className="project-links">
+      <a href="#" className="btn view-btn">🔗 View</a>
+      <a href="#" className="btn github-btn">🐙 GitHub</a>
+    </div>
+  </div>
+
+
+  
+  {/* <div className="project-card">
+    <div className="card-header">
+      <img src={pfp} alt="Project Preview" className="project-image" />
+      <h2>React.js Toast Library</h2>
+    </div>
+    <p className="project-description">A simple and customizable React toast notification library.</p>
+
+    <div className="project-category">
+      <h4>Project Category</h4>
+      <div className="tags">
+        <span className="tag">Library</span>
+        <span className="tag">JavaScript</span>
+        <span className="tag">Frontend</span>
+      </div>
+    </div>
+
+    <div className="technologies-used">
+      <h4>Technologies Used</h4>
+      <div className="tags">
+        <span className="tag">TypeScript</span>
+        <span className="tag">Node.js</span>
+        <span className="tag">JavaScript</span>
+      </div>
+    </div>
+
+    <div className="project-links">
+      <a href="#" className="btn view-btn">🔗 View</a>
+      <a href="#" className="btn github-btn">🐙 GitHub</a>
+    </div>
+  </div> */}
+</div>
+
 
 
       </section>

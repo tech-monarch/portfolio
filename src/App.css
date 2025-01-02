@@ -17,7 +17,7 @@ h1, h2, h3 {
 
 nav a i {
   font-size: 2rem; /* Increase the size of icons */
-  color: #4B0082; /* Dark purple color */
+  color: #6a11cb; /* Dark purple color */
   margin-right: 1rem; /* Optional: add space between icon and text */
 }
 
@@ -52,7 +52,7 @@ header nav a:hover {
 }
 
 .nav-container {
-  background-color: rgb(76, 5, 152);
+  background-color: #6a11cb;
   padding: 1rem;
   border-radius: 2rem;
   border: 2px solid black;
@@ -213,41 +213,87 @@ section p {
 
 .project-cards-container {
   display: flex;
-  justify-content: space-around; /* Adds equal spacing between cards */
-  flex-wrap: wrap; /* Wraps if necessary but keeps two in a row */
-  margin: 1rem 0;
+  flex-wrap: wrap; /* Enables wrapping to the next line */
+  gap: 20px; /* Spacing between the cards */
+  justify-content: center; /* Center-aligns the cards */
+  margin: 20px;
 }
 
 .project-card {
+  background-color: #6a11cb; /* Dark purple */
   color: white;
-  background-color: #6a11cb; /* Optional background color */ 
-  border-radius: 8px; /* Optional border radius for corners */
-  width: calc(50% - 2rem); /* Make each card take up half the container width */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-  margin: 1rem;
-  padding: 1rem;
+  padding: 20px;
+  max-width: calc(50% - 20px); /* Two cards per line with spacing */
+  flex: 1 1 calc(50% - 20px); /* Flex property for responsive sizing */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  font-family: "Arial", sans-serif;
   text-align: center;
 }
 
-.project-card img {
-  max-width: 100%;
-  border-radius: 8px;
+.project-card .card-header {
+  margin-bottom: 15px;
 }
 
-.project-card h3 {
-  margin: 0.5rem 0;
+.project-card .project-image {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 10px;
+}
+
+.project-card h2 {
   font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.project-card p {
-  margin: 0.5rem 0;
-  font-size: 1rem;
+.project-description {
+  margin: 10px 0;
 }
 
-.project-card a {
-  color: #007bff;
+.project-category,
+.technologies-used {
+  margin-top: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #9b4eed; /* Slightly lighter purple */
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+.project-links .btn {
+  display: inline-block;
+  background-color: #000; /* Black buttons */
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
+
+.project-links .btn:hover {
+  background-color: #4c105d; 
+}
+
+.github-btn {
+  background-color: #333; /* Slightly different color for GitHub */
+}
+
 
 /* Media query for mobile view */
 @media (max-width: 768px) {
@@ -267,27 +313,34 @@ section p {
 
 /* Media query for mobile view */
 @media (max-width: 768px) {
-  .project-cards-container {
-    display: flex;
-    flex-direction: column; /* Ensures one card per line */
-  }
   .hero-image{
     width: 10rem;
   }
 
-  .project-card {
-    width: 100%; /* Ensures full width for each card on mobile */
-    margin-bottom: 20px; /* Adds some spacing between cards */
-    margin-left: -0.5rem;
-  }
 }
 
 .background-image {
   background-image: url('./images/background.png'); /* Replace 'path-to-your-image.jpg' with your actual image path */
   background-size: cover;
   background-position: center;
+  animation: float 6s ease-in-out infinite;
+}
+
+
+
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(5px, -10px); /* Add horizontal movement */
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 [data-aos="fade-up"] {
   transition-duration: 2s;
 }
+
