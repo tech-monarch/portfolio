@@ -271,7 +271,7 @@ Tools: Git/GitHub, Docker<br></br>
 Platforms: Pxxl Space, AWS, Vercel, Truehost
 <br></br><br></br>
 <h5><b>Design & 3D/2D:</b></h5>
-Blender, Tupitube
+Blender, Tupitube, Photoshop, Illustrator, Canva, Figma
 </div>
 <br></br>
 <br></br>
