@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Particles from 'react-tsparticles';
 import './App.css';
 import myImage from './images/my-image.png';
+import king from './images/king😹.png'
 import blender from './images/blender.png';
 import c from './images/c.png';
 import css3 from './images/css3.png';
@@ -125,7 +126,8 @@ const pxxl = { app: 'https://pxxl.app' }; // Example URL
         
         
 
-        <img src={myImage} alt="Hero" className="hero-image" />
+        {/* <img src={myImage} alt="Hero" className="hero-image" /> */}
+        <img src={king} alt="Hero" className="hero-image" />
         <h2 style={{ color: 'white', fontSize: '3rem' }} className="text-arrangement">
           I am <span>OMIJEH DAVID ODIANONSEN</span>
         </h2>
