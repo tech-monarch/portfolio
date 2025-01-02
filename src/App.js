@@ -261,9 +261,10 @@ MySQL, MongoDB
 <br></br><br></br>
 <h5><b>AI/ML:</b></h5>
 Languages: Python
-Libraries: TensorFlow, scikit-learn, OpenAI API, Llama<br></br>
-Embedded Systems:
-Languages: C++
+Libraries: TensorFlow, scikit-learn, OpenAI API, Llama<br></br><br></br>
+<h5><b>Embedded Systems:</b></h5>
+
+Languages: C++<br></br>
 Tools: Arduino IDE
 <br></br><br></br>
 <h5><b>DevOps/Hosting:</b></h5>
