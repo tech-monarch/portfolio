@@ -1,4 +1,7 @@
-/* General Reset */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -82,7 +85,7 @@ header nav a:hover {
 }
 .hero-image {
   margin-top: -3rem;
-  width: 13rem; /* Full width */
+  width: 15rem; /* Full width */
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 1rem;
 }
@@ -129,11 +132,11 @@ section p {
   display: flex;
   flex-direction: column;
   align-items: flex-end; /* Align items to the right */
-  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+  transition: transform 0.7s ease-in-out; /* Smooth transition effect */
 }
 
 .hidden {
-  transform: translateX(100%); /* Slide out to the right */
+  transform: translateX(100%); 
 }
 
 
@@ -206,4 +209,80 @@ section p {
   to {
     transform: translateX(-100%); /* Move left by the width of one full track */
   }
+}
+
+.project-cards-container {
+  display: flex;
+  justify-content: space-around; /* Adds equal spacing between cards */
+  flex-wrap: wrap; /* Wraps if necessary but keeps two in a row */
+  margin: 1rem 0;
+}
+
+.project-card {
+  color: white;
+  background-color: #6a11cb; /* Optional background color */ 
+  border-radius: 8px; /* Optional border radius for corners */
+  width: calc(50% - 2rem); /* Make each card take up half the container width */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.project-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .hide {
+    display: none; /* Hides the button container on mobile view */
+  }
+  .center{
+    text-align: center;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .text-arrangement{
+    margin-bottom: 5rem;
+  }
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .project-cards-container {
+    display: flex;
+    flex-direction: column; /* Ensures one card per line */
+  }
+  .hero-image{
+    width: 10rem;
+  }
+
+  .project-card {
+    width: 100%; /* Ensures full width for each card on mobile */
+    margin-bottom: 20px; /* Adds some spacing between cards */
+  }
+}
+
+.background-image {
+  background-image: url('./images/background.png'); /* Replace 'path-to-your-image.jpg' with your actual image path */
+  background-size: cover;
+  background-position: center;
 }
