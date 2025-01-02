@@ -14,6 +14,7 @@ import pytorch from './images/pytorch.png';
 import ps from './images/ps.png';
 import react from './images/react.png';
 import tensorflow from './images/tensorflow.png';
+import pfp from './images/pfp.png';
 
 function App() {
   const [showButtonContainer, setShowButtonContainer] = useState(true);
@@ -91,29 +92,50 @@ function App() {
         
 
         <div className="container">
-  <div>
-    <p>About Me</p>
-    <p>My Projects</p>
-    <p>Contact Me</p>
+  <div style={{marginTop: '2rem'}}>
+  <h2 className="underline">I Build Cool Stuff</h2>
+<h2 className="underline">I Code Sometimes</h2>
+<h2 className="underline">I Love Reading</h2>
+
   </div>
 
   <div>
-    <p>About Me</p>
-    <p>My Projects</p>
-    <p>Contact Me</p>
+  <img src={pfp} alt="pfp" className="pfp" />
   </div>
 
-  <div>
-    <p>About Me</p>
-    <p>My Projects</p>
-    <p>Contact Me</p>
+  <div style={{width: '100%', height: '30vh', backgroundColor: '#6a11cb', padding: '0.3rem', borderRadius: '0'}}>
+
+  <div style={{width: '100%', height: '100%', backgroundColor: 'black', padding: '0.3rem'}}>
+  <div style={{width: '100%', height: '100%', backgroundColor: '#6a11cb', padding: '1rem', color: 'white'}}>
+
+    <h3><b>My Top Skills/Languages</b></h3>
+    <div>
+      <p  className="skills" >Chess</p>
+      <p className="skills">Javascript</p>
+      <p className="skills">React Native</p>
+      <p className="skills">Php</p>
+      <p className="skills">Typescript</p>
+      <p className="skills">C++</p>
+      <p className="skills">Python</p>
+      <p className="skills">3d Animation</p>
+      <p className="skills">Graphics Design</p>
+      <p className="skills">React</p>
+    </div>
+    
+
+
+
+</div>
+
+</div>
+
   </div>
 
-  <div>
+  {/* <div>
     <p>About Me</p>
     <p>My Projects</p>
     <p>Contact Me</p>
-  </div>
+  </div> */}
 </div>
 
       </section>
