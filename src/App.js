@@ -255,13 +255,13 @@ Styling: Tailwind CSS, SCSS<br></br>
 <br></br><br></br>
 <h5><b>Backend:</b></h5>
 Languages: Node.js, PHP<br></br>
-Frameworks: Express.js, Laravel (optional)<br></br>
+Frameworks: Express.js, Laravel<br></br>
 Databases:
 MySQL, MongoDB
 <br></br><br></br>
 <h5><b>AI/ML:</b></h5>
 Languages: Python
-Libraries: TensorFlow, scikit-learn, OpenAI API<br></br>
+Libraries: TensorFlow, scikit-learn, OpenAI API, Llama<br></br>
 Embedded Systems:
 Languages: C++
 Tools: Arduino IDE
