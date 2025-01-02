@@ -18,8 +18,21 @@ import react from './images/react.png';
 import tensorflow from './images/tensorflow.png';
 import background from './images/background.png';
 import pfp from './images/pfp.png';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
+AOS.init();
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Animation easing function
+      once: false, // Whether animation should happen only once
+    });
+  }, []); // The empty dependency array ensures this runs only once
+
+
   const [showButtonContainer, setShowButtonContainer] = useState(true);
 
   useEffect(() => {
@@ -127,21 +140,21 @@ const pxxl = { app: 'https://pxxl.app' }; // Example URL
         
 
         {/* <img src={myImage} alt="Hero" className="hero-image" /> */}
-        <img src={king} alt="Hero" className="hero-image" />
-        <h2 style={{ color: 'white', fontSize: '3rem' }} className="text-arrangement">
+        <img src={king} alt="Hero" className="hero-image"  data-aos="fade-up"/>
+        <h2 style={{ color: 'white', fontSize: '3rem' }} className="text-arrangement"  data-aos="fade-up">
           I am <span>OMIJEH DAVID ODIANONSEN</span>
         </h2>
-        <p>A.K.A TECH MONARCH(Odia)</p>
+        <p  data-aos="fade-up">A.K.A TECH MONARCH(Odia)</p>
 
         {showButtonContainer && (
           <div className="button-container hide">
-          <a href="#about" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <a href="#about" style={{ textDecoration: 'none', color: 'inherit' }}  data-aos="fade-up">
             <p>About Me</p>
           </a>
-          <a href="#projects" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <a href="#projects" style={{ textDecoration: 'none', color: 'inherit' }}  data-aos="fade-up">
             <p>My Projects</p>
           </a>
-          <a href="#contact" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <a href="#contact" style={{ textDecoration: 'none', color: 'inherit' }}  data-aos="fade-up">
             <p>Contact Me</p>
           </a>
         </div>
@@ -151,31 +164,31 @@ const pxxl = { app: 'https://pxxl.app' }; // Example URL
 
       <section id="about" style={{ textAlign: 'center', marginTop: '3rem' }}>
         <div>
-          <h2 style={{ padding: '1rem', backgroundColor: '#4B0082', color: 'white', marginBottom: '2rem' }}>About Me</h2>
+          <h2 style={{ padding: '1rem', backgroundColor: '#4B0082', color: 'white', marginBottom: '2rem' }} data-aos="fade-up">About Me</h2>
         </div>
         
 
         <div className="container">
   <div style={{marginTop: '2rem'}}>
-  <h2 className="underline">I Build Cool Stuff</h2>
-<h2 className="underline">I Code Sometimes</h2>
-<h2 className="underline">I Love Reading</h2>
-<h2 className="underline">I Play Chess</h2>
+  <h2 className="underline" data-aos="fade-up">I Build Cool Stuff</h2>
+<h2 className="underline" data-aos="fade-up">I Code Sometimes</h2>
+<h2 className="underline" data-aos="fade-up">I Love Reading</h2>
+<h2 className="underline" data-aos="fade-up" >I Play Chess</h2>
 
   </div>
 
   <div>
-  <img src={pfp} alt="pfp" className="pfp" />
+  <img src={pfp} alt="pfp" className="pfp"  data-aos="zoom-in"/>
   </div>
 
-  <div style={{width: '100%', height: '100%', backgroundColor: '#6a11cb', padding: '0.3rem', borderRadius: '0'}}>
+  <div style={{width: '100%', height: '100%', backgroundColor: '#6a11cb', padding: '0.3rem', borderRadius: '0'}} data-aos="fade-up">
 
   <div style={{width: '100%', height: '100%', backgroundColor: 'black', padding: '0.3rem'}}>
   <div style={{width: '100%', height: '100%', backgroundColor: '#6a11cb', padding: '1rem', color: 'white'}}>
 
     <h3><b>My Top Skills/Languages</b></h3>
     
-    <div className="skills-carousel">
+    <div className="skills-carousel" data-aos="fade-up">
   <div className="skills-track">
     <p className="skills">Chess</p>
     <p className="skills">Javascript</p>
@@ -253,26 +266,26 @@ const pxxl = { app: 'https://pxxl.app' }; // Example URL
 
 
       <section id="projects">
-        <h2 style={{textAlign: 'center', marginTop: '2rem'}}><span><b>My Projects</b></span></h2>
-        <p style={{color: 'white'}}>Over the years, I’ve worked on a variety of projects that reflect my passion for technology, problem-solving, and continuous learning. From web development and software applications to AI-powered tools, each project has been an opportunity to apply my skills, explore new technologies, and contribute to meaningful solutions. Below are some of the key projects I’ve had the privilege of working on.</p>
+        <h2 style={{textAlign: 'center', marginTop: '2rem'}}  data-aos="fade-up"><span><b>My Projects</b></span></h2>
+        <p style={{color: 'white'}}  data-aos="fade-up">Over the years, I’ve worked on a variety of projects that reflect my passion for technology, problem-solving, and continuous learning. From web development and software applications to AI-powered tools, each project has been an opportunity to apply my skills, explore new technologies, and contribute to meaningful solutions. Below are some of the key projects I’ve had the privilege of working on.</p>
 
 
         <div className="project-cards-container">
-  <div className="project-card">
+  <div className="project-card"  data-aos="fade-up">
     <img src={pfp} alt="Pxxl Space" />
     <h3><b>Pxxl Space (Web Hosting Platform)</b></h3>
     <p>A free web hosting platform supporting popular backend languages with custom cPanel features.</p>
     <a href={pxxl.app} target="_blank" rel="noopener noreferrer">Learn More</a>
   </div>
   
-  <div className="project-card">
+  <div className="project-card"  data-aos="fade-up">
     <img src={pfp} alt="Pxxl Space" />
     <h3><b>AI Chatbot – LuminaAI</b></h3>
     <p>An AI chatbot designed for open-ended, empathetic conversations, supporting multiple languages including Nigerian languages.</p>
     <a href={pxxl.app} target="_blank" rel="noopener noreferrer">Learn More</a>
   </div>
   
-  <div className="project-card">
+  <div className="project-card"  data-aos="fade-up">
     <img src={pfp} alt="Pxxl Space" />
     <h3><b>AI/ML Model Development</b></h3>
     <p>Developed models for AI-powered tools, including image recognition systems and machine learning algorithms.</p>

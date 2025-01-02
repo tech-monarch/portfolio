@@ -287,3 +287,7 @@ section p {
   background-size: cover;
   background-position: center;
 }
+
+[data-aos="fade-up"] {
+  transition-duration: 2s;
+}
