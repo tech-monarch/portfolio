@@ -210,7 +210,6 @@ section p {
     transform: translateX(-100%); /* Move left by the width of one full track */
   }
 }
-
 .project-cards-container {
   display: flex;
   flex-wrap: wrap; /* Enables wrapping to the next line */
@@ -292,6 +291,14 @@ section p {
 
 .github-btn {
   background-color: #333; /* Slightly different color for GitHub */
+}
+
+/* Mobile View: Arrange Cards Vertically */
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 100%; /* Full width for each card */
+    flex: 1 1 100%; /* Flex property for vertical stacking */
+  }
 }
 
 
