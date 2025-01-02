@@ -190,7 +190,7 @@ useEffect(() => {
 
   <div style={{width: '100%', height: '100%', backgroundColor: 'black', padding: '0.3rem'}}>
   <div style={{width: '100%', height: '100%', backgroundColor: '#6a11cb', padding: '1rem', color: 'white'}}>
-
+    
     <h3><b>My Top Skills/Languages</b></h3>
     
     <div className="skills-carousel" data-aos="fade-up">
@@ -243,6 +243,9 @@ useEffect(() => {
     <p className="skills">React</p>
   </div>
 </div>
+
+<div style={{backgroundColor: 'white', padding: '1rem', margin: '1rem', border: '1px solid black', borderRadius: '1rem', color: 'black', margin: '2rem'}}  data-aos="fade-up"><a href="#" style={{color: '#4c105d'}}>Download Resume</a></div>
+
 
 <br></br>
 <br></br>
