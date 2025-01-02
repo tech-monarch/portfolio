@@ -131,7 +131,7 @@ const pxxl = { app: 'https://pxxl.app' }; // Example URL
         <h2 style={{ color: 'white', fontSize: '3rem' }} className="text-arrangement">
           I am <span>OMIJEH DAVID ODIANONSEN</span>
         </h2>
-        <p>A.K.A TECH MONARCH</p>
+        <p>A.K.A TECH MONARCH(Odia)</p>
 
         {showButtonContainer && (
           <div className="button-container hide">
