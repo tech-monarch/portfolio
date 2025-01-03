@@ -18,10 +18,10 @@ import react from './images/react.png';
 import tensorflow from './images/tensorflow.png';
 import background from './images/background.png';
 import pfp from './images/pfp.png';
-import pxxl from './images/pxxl.png';
+import pxxxl from './images/pxxl.png';
 import lumina from './images/Lumina.png';
 import robot from './images/car.jpg';
-
+ 
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -149,7 +149,7 @@ useEffect(() => {
         <h2 style={{ color: 'white', fontSize: '3rem' }} className="text-arrangement" >
           <b>I am <span>OMIJEH DAVID ODIANONSEN</span></b>
         </h2>
-        <p>A.K.A TECH MONARCH(Odia)</p>
+        <p>TECH MONARCH</p>
 
         {showButtonContainer && (
           <div className="button-container hide">
@@ -336,7 +336,7 @@ Blender, Tupitube, Photoshop, Illustrator, Canva, Figma
   
   <div className="project-card" data-aos="zoom-in">
     <div className="card-header">
-      <img src={pxxl} alt="Project Preview" className="project-image" />
+      <img src={pxxxl} alt="Project Preview" className="project-image" />
       <h2><b>Pxxl Space</b></h2>
     </div>
     <p className="project-description">A Free Web Hosting Platform.</p>

@@ -101,7 +101,7 @@ header nav a:hover {
 
 /* Sections */
 section {
-  padding: 2rem;
+  padding: 0.5rem;
   max-width: 800px;
   margin: auto;
   height: 100%;
@@ -327,7 +327,7 @@ section p {
 }
 
 .background-image {
-  background-image: url('./images/background.png'); /* Replace 'path-to-your-image.jpg' with your actual image path */
+  background-image: url('./images/dd.png'); /* Replace 'path-to-your-image.jpg' with your actual image path */
   background-size: cover;
   background-position: center;
   animation: float 6s ease-in-out infinite;
