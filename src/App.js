@@ -148,7 +148,7 @@ useEffect(() => {
 
         {/* <img src={myImage} alt="Hero" className="hero-image" /> */}
         <img src={king} alt="Hero" className="hero-image" />
-        <h2 style={{ color: 'white', fontSize: '3rem' }} className="text-arrangement" >
+        <h2 style={{ color: 'white', fontSize: '3rem', fontWeight: '1000'}} className="text-arrangement" >
           <b>I am <span>OMIJEH DAVID ODIANONSEN</span></b>
         </h2>
         <p>TECH MONARCH</p>
