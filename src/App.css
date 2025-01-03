@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
-.caveat-brush-regular {
-  font-family: "Caveat Brush", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+  .pangolin-regular {
+    font-family: "Pangolin", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 html {
   scroll-behavior: smooth;
@@ -11,15 +13,15 @@ html {
 
 body {
   margin: 0;
-  font-family: "Caveat Brush", serif;
+    font-family: "Pangolin", serif;
   color: #333;
   line-height: 1.6;
   background-color: #000000;
-  font-family: "Caveat Brush", serif;
+    font-family: "Pangolin", serif;
 }
 
 h1, h2, h3 {
-  font-family: "Caveat Brush", serif;
+    font-family: "Pangolin", serif;
 }
 
 nav a i {
@@ -232,7 +234,7 @@ section p {
   max-width: calc(50% - 20px); /* Two cards per line with spacing */
   flex: 1 1 calc(50% - 20px); /* Flex property for responsive sizing */
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  font-family: "Caveat Brush", serif;
+    font-family: "Pangolin", serif;
   text-align: center;
 }
 
