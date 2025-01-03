@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+.caveat-brush-regular {
+  font-family: "Caveat Brush", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Caveat Brush", serif;
   color: #333;
   line-height: 1.6;
   background-color: #000000;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Caveat Brush", serif;
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif; /* or any of the listed fonts */
+  font-family: "Caveat Brush", serif;
 }
 
 nav a i {
@@ -225,7 +232,7 @@ section p {
   max-width: calc(50% - 20px); /* Two cards per line with spacing */
   flex: 1 1 calc(50% - 20px); /* Flex property for responsive sizing */
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  font-family: "Arial", sans-serif;
+  font-family: "Caveat Brush", serif;
   text-align: center;
 }
 
@@ -351,3 +358,23 @@ section p {
   transition-duration: 2s;
 }
 
+.see-more-button {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.see-more-content {
+  display: none; /* Initially hide content */
+}
+
+.see-more-content.active {
+  display: block; /* Show content when active */
+}

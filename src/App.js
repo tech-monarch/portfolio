@@ -21,6 +21,7 @@ import pfp from './images/pfp.png';
 import pxxxl from './images/pxxl.png';
 import lumina from './images/Lumina.png';
 import robot from './images/car.jpg';
+import MyTechStack from './stack';
  
 
 import AOS from 'aos';
@@ -60,6 +61,7 @@ useEffect(() => {
     once: true,
   });
 }, []);
+
 
   return (
     <div className="background-image">
@@ -246,6 +248,7 @@ useEffect(() => {
 
 <div style={{backgroundColor: 'white', padding: '1rem', margin: '1rem', border: '1px solid black', borderRadius: '1rem', color: 'black', margin: '2rem'}}  data-aos="fade-up"><a href="#" style={{color: '#4c105d'}}>Download Resume</a></div>
 
+<div>
 <h3><b>My Tech Stack</b></h3>
 <div style={{textAlign: 'left', margin: '2rem'}}>
 <h5><b>Frontend:</b></h5>
@@ -278,8 +281,8 @@ Blender, Tupitube, Photoshop, Illustrator, Canva, Figma
 <br></br>
 <h3><b>A little Writeup about myself✨</b></h3>
 <p> My name is <span style={{ color: 'black' }}><b>Omijeh David Odianonsen</b></span> also known as The Tech Monarch or Odia, and I'm a 17-year-old tech enthusiast and developer from Edo State, Nigeria. My journey into technology began when I was just 9 or 10 years old, experimenting with Python and Scratch to explore the foundations of coding. Driven by curiosity and a relentless passion for learning, I quickly expanded my skills. </p> <p> By the age of 11, I was building remote-controlled cars and tinkering with electronics, developing an intuitive understanding of how systems work. I even took on fixing broken sockets and household devices, which further fueled my technical ingenuity. At 13, I attended my first embedded systems class, working with ultrasonic sensors, PIR sensors, servos, and other components. Around the same time, I explored 2D animation, adding creative flair to my technical pursuits. </p> <p> At 14, I ventured into web development, starting with the LAMP stack (PHP, Apache, MySQL, and Linux). Soon after, I transitioned to the MERN stack and dove into app development with React Native. This versatility laid the groundwork for my growing interest in artificial intelligence and machine learning (AI/ML), which I began exploring at 16. With consistent effort, I started working on 3D modeling by the time I turned 17, further expanding my skill set into the creative domain. </p> <p> Along this journey, I've built various projects, from websites and applications to interactive AI-powered tools. My dedication to learning and creating has positioned me as a multidisciplinary technologist with experience in software development, embedded systems, and AI/ML. I'm passionate about leveraging technology to solve real-world problems and continuously push the boundaries of what's possible. </p>
-
-    
+</div>
+   {/* <MyTechStack />    */}
 
 
 
