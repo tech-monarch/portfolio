@@ -22,6 +22,7 @@ import pxxxl from './images/pxxl.png';
 import lumina from './images/Lumina.png';
 import robot from './images/car.jpg';
 import MyTechStack from './stack';
+import hero from './images/hero.png';
  
 
 import AOS from 'aos';

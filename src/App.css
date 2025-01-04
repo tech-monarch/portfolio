@@ -336,7 +336,7 @@ section p {
 }
 
 .background-image {
-  background-image: url('./images/dd.png'); /* Replace 'path-to-your-image.jpg' with your actual image path */
+  /* background-image: url('./images/dd.png'); */
   background-size: cover;
   background-position: center;
   animation: float 6s ease-in-out infinite;
