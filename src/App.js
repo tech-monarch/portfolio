@@ -22,7 +22,7 @@ import pxxxl from './images/pxxl.png';
 import lumina from './images/Lumina.png';
 import robot from './images/car.jpg';
 import MyTechStack from './stack';
-import hero from './images/hero.png';
+import niger from './images/discover-niger.png';
  
 
 import AOS from 'aos';
@@ -402,6 +402,35 @@ Blender, Tupitube, Photoshop, Illustrator, Canva, Figma
   </div>
 
 
+  <div className="project-card" data-aos="zoom-in">
+    <div className="card-header">
+      <img src={niger} alt="Project Preview" className="project-image" />
+      <h2><b>Discover Niger</b></h2>
+    </div>
+    <p className="project-description">A platform i designed for Niger State Nigeria, where they can get information, history, tourist centers and hotspots.</p>
+
+    <div className="project-category">
+      <h4>Project Category</h4>
+      <div className="tags">
+        <span className="tag">JavaScript</span>
+        <span className="tag">Full Stack</span>
+      </div>
+    </div>
+
+    <div className="technologies-used">
+      <h4>Technologies Used</h4>
+      <div className="tags">
+        <span className="tag">Javascript</span>
+        <span className="tag">HTML5</span>
+        <span className="tag">CSS3</span>
+      </div>
+    </div>
+
+    <div className="project-links">
+      <a href="#" className="btn view-btn">🔗 View</a>
+      <a href="#" className="btn github-btn">🐙 GitHub</a>
+    </div>
+  </div>
 
 
   <div className="project-card" data-aos="zoom-in">
